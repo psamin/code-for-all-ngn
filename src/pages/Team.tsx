@@ -4,63 +4,35 @@ import { CodeHeading } from "@/components/CodeHeading";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { User } from "lucide-react";
 import teamPraneethS from "@/assets/team-praneeth-s.jpeg";
-import teamAbhinav from "@/assets/team-abhinav.png";
-import teamSrikar from "@/assets/team-srikar.png";
-import teamAlan from "@/assets/team-alan.png";
-import teamPraneethK from "@/assets/team-praneeth-k.png";
-import teamSrihith from "@/assets/team-srihith.png";
-import teamArjun from "@/assets/team-arjun.png";
-import teamPrahas from "@/assets/team-prahas.png";
+import teamSoumith from "@/assets/team-soumith.png";
+import teamPratik from "@/assets/team-pratik.png";
+import teamAnith from "@/assets/team-anith.png";
 
 const Team = () => {
   const officers = [
     {
-      name: "Praneeth S",
-      role: "CEO & Owner",
+      name: "Praneeth S.",
+      role: "Founder/Owner",
       bio: "Georgia Tech CS and Math student overseeing nonprofit operations, partnerships, and curriculum strategy to expand computing education access.",
       photo: teamPraneethS
     },
     {
-      name: "Abhinav Mittal",
+      name: "Soumith Kondamadugula",
+      role: "CEO",
+      bio: "Leading the organization's vision and strategy to bring computer science education to more students.",
+      photo: teamSoumith
+    },
+    {
+      name: "Pratik Mondal",
+      role: "CTO",
+      bio: "Overseeing our technology and technical programs to give students hands-on experience with real tools.",
+      photo: teamPratik
+    },
+    {
+      name: "Anith Sascydharan",
       role: "COO",
       bio: "Managing day-to-day operations and program execution to maximize impact.",
-      photo: teamAbhinav
-    },
-    {
-      name: "Srikar",
-      role: "CMO",
-      bio: "Building our brand and reaching more students who can benefit from our programs.",
-      photo: teamSrikar
-    },
-    {
-      name: "Alan",
-      role: "Co-Director of Curriculum",
-      bio: "Developing engaging curriculum and learning materials for our programs.",
-      photo: teamAlan
-    },
-    {
-      name: "Praneeth K",
-      role: "Co-Director of Curriculum",
-      bio: "Creating innovative educational content to enhance student learning experiences.",
-      photo: teamPraneethK
-    },
-    {
-      name: "Srihith",
-      role: "CIO",
-      bio: "Managing information systems and data-driven decision making.",
-      photo: teamSrihith
-    },
-    {
-      name: "Arjun",
-      role: "CHRO",
-      bio: "Leading human resources and building a strong volunteer community.",
-      photo: teamArjun
-    },
-    {
-      name: "Prahas",
-      role: "CFO",
-      bio: "Ensuring financial sustainability and responsible resource allocation.",
-      photo: teamPrahas
+      photo: teamAnith
     }
   ];
 
@@ -84,7 +56,7 @@ const Team = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {officers.map((officer, index) => (
                 <Card 
                   key={index} 
@@ -96,7 +68,7 @@ const Team = () => {
                         <img 
                           src={officer.photo} 
                           alt={officer.name}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover object-top"
                         />
                       ) : (
                         <User className="w-24 h-24 text-muted-foreground" />
