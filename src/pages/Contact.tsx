@@ -105,10 +105,10 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <a 
-                    href="mailto:soumithkondamadugula@gmail.com"
+                    href="mailto:soumithreddy09@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    soumithkondamadugula@gmail.com
+                    soumithreddy09@gmail.com
                   </a>
                 </CardContent>
               </Card>
