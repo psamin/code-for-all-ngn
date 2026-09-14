@@ -14,13 +14,15 @@ const Team = () => {
       name: "Praneeth S.",
       role: "Founder/Owner",
       bio: "Georgia Tech CS and Math student overseeing nonprofit operations, partnerships, and curriculum strategy to expand computing education access.",
-      photo: teamPraneethS
+      photo: teamPraneethS,
+      photoClassName: "scale-150"
     },
     {
       name: "Soumith Kondamadugula",
       role: "CEO",
       bio: "Leading the organization's vision and strategy to bring computer science education to more students.",
-      photo: teamSoumith
+      photo: teamSoumith,
+      photoClassName: "scale-[1.2]"
     },
     {
       name: "Pratik Mondal",
@@ -68,7 +70,7 @@ const Team = () => {
                         <img 
                           src={officer.photo} 
                           alt={officer.name}
-                          className="w-full h-full object-cover object-top"
+                          className={`w-full h-full object-cover object-top ${officer.photoClassName ?? ""}`}
                         />
                       ) : (
                         <User className="w-24 h-24 text-muted-foreground" />
